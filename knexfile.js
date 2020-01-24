@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      database: 'schemes',
+      database: 'recipies', // used to be called schemes
       user:     'postgres',
       password: ';/U1waA=.dlE^59b\''
     },
@@ -14,10 +14,10 @@ module.exports = {
       max: 10
     },
     migrations: {
-      directory: './data/migrations'
+      directory: './migrations'
     },
     seeds: {
-      directory: './data/seeds'
+      directory: './seeds'
     },
 
   },
